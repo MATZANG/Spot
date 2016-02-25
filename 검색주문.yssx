@@ -91,8 +91,7 @@ function Main_OnRcvMarketData(MarketData)
       //생성횟수와 해당 종목의 코드와 현재가, 매매단위를 디버깅창에 출력
       Main.MessageList("생성순번",RcvCount,"종목코드",ItemCode[RcvCount],"현재가",ItemPrice[RcvCount],"주문수량단위",ItemUnits[RcvCount]);
       
-	  
-	  if (ListCnt >= InputVar2) {Stock_count = InputVar2;}else{Stock_count = ListCnt;}
+     if (ListCnt >= InputVar2) {Stock_count = InputVar2;}else{Stock_count = ListCnt;}
 
       //검색된 종목에 대해 모두 종목객체가 생성되었다면
       if (RcvCount == ListCnt)
